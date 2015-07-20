@@ -1,0 +1,8 @@
+﻿@model List<Item>
+<h1>@ViewBag.Mensaje</h1>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>id: @item.Id nombre: @item.Nombre</li>
+    }
+</ul>

@@ -1,0 +1,31 @@
+﻿@model Dictionary<string, string>
+<h2>¡Esto podría venir de una base de datos!</h2>
+<div class="bannerNoticias">
+    <p>Noticias</p>
+    @foreach (var item in Model)
+    {
+        <div class="noticias">
+            <h4>@item.Key</h4>
+            <p>@item.Value</p>
+        </div>
+    }
+    <div class="clearer"></div>
+</div>
+<style>
+    .bannerNoticias {
+        border: solid 1px #aaa;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+        .bannerNoticias .noticias {
+            display: inline-block;
+            float: left;
+            max-width: 200px;
+            font-size: 12px;
+        }
+
+    .clearer {
+        clear: both;
+    }
+</style>

@@ -1,0 +1,13 @@
+{
+  "AppSettings": {
+    "SiteTitle": "wm.website.ui"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-wm.website.ui-387018b1-4ef0-435b-8bc3-d68cf19adb44;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  },
+  "EntityFramework": {
+    "ConnectionString": "Server=VISUALSTUDIOSTA\\SQLEXPRESS;Database=businessdb;user=sa;password=contrasena"
+  }
+}
