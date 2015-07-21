@@ -53,11 +53,11 @@ namespace wm.website.ui
 
             // Add Entity Framework services to the services container.
             services.AddEntityFramework()
-    .AddSqlServer()
-    .AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]))
-    .AddDbContext<NoticiasAppContext>(options =>
-        options.UseSqlServer(Configuration["EntityFramework:ConnectionString"]));
+                .AddSqlServer()
+                .AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]))
+                .AddDbContext<NoticiasAppContext>(options =>
+                    options.UseSqlServer(Configuration["EntityFramework:ConnectionString"]));
 
 
             // Add Identity services to the services container.
@@ -82,8 +82,7 @@ namespace wm.website.ui
 
             // Add MVC services to the services container.
             services.AddMvc();
-
-            services.AddTransient<DbContext, NoticiasAppContext>();
+            
 
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
             // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
@@ -93,7 +92,7 @@ namespace wm.website.ui
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
 
-            //services.AddTransient<IErrorLogger, ErrorLogger>();
+            services.AddTransient<IErrorLogger, ErrorLogger>();
         }
 
         // Configure is called after ConfigureServices is called.

@@ -1,12 +1,12 @@
-﻿@model Dictionary<string, string>
+﻿@model List<Noticia>
 <h2>¡Esto podría venir de una base de datos!</h2>
 <div class="bannerNoticias">
     <p>Noticias</p>
     @foreach (var item in Model)
     {
         <div class="noticias">
-            <h4>@item.Key</h4>
-            <p>@item.Value</p>
+            <h4>@item.Titulo</h4>
+            <p>@item.Descripcion</p>
         </div>
     }
     <div class="clearer"></div>

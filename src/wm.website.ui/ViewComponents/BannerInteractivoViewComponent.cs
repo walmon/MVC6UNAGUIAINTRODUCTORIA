@@ -25,8 +25,8 @@ namespace wm.website.ui.ViewComponents
             // Recreemos los 3 archivos
             db.Noticias.AddRange(new List<Noticia>() {
                 new Noticia() { Id=1, Titulo="Costa Rica en el puesto #13 de FIFA", Descripcion="Est porta ac magna lundium? Amet eros. Lorem cum ut auctor vel integer mus tortor, adipiscing platea penatibus, in placerat, lectus adipiscing! Ultrices scelerisque adipiscing parturient!" },
-                new Noticia() { Id=1, Titulo="Nuevo ASP.NET 5", Descripcion="Est porta ac magna lundium? Amet eros. Lorem cum ut auctor vel integer mus tortor, adipiscing platea penatibus, in placerat, lectus adipiscing! Ultrices scelerisque adipiscing parturient!" },
-                new Noticia() { Id=1, Titulo="¡Hololens está aquí!", Descripcion="Est porta ac magna lundium? Amet eros. Lorem cum ut auctor vel integer mus tortor, adipiscing platea penatibus, in placerat, lectus adipiscing! Ultrices scelerisque adipiscing parturient!" }
+                new Noticia() { Id=2, Titulo="Nuevo ASP.NET 5", Descripcion="Est porta ac magna lundium? Amet eros. Lorem cum ut auctor vel integer mus tortor, adipiscing platea penatibus, in placerat, lectus adipiscing! Ultrices scelerisque adipiscing parturient!" },
+                new Noticia() { Id=3, Titulo="¡Hololens está aquí!", Descripcion="Est porta ac magna lundium? Amet eros. Lorem cum ut auctor vel integer mus tortor, adipiscing platea penatibus, in placerat, lectus adipiscing! Ultrices scelerisque adipiscing parturient!" }
             });
             db.SaveChanges();
 
